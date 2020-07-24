@@ -1,0 +1,11 @@
+1.Base Class: main class from where execution strated
+    a1.we have to set the name of tag, in base class
+    a2.we have home class(@SearchItem) and login(@createAccount,@InvalidLogin) class
+    a3.set the device information into desiredcapability
+    a4.install  android app and set that location in base class
+ 2.ObjectRepository is store all the objects
+ 3.Home class is for search the TV and add to cart
+ 4.Login feature contain both valid and invalid methods
+ 5.every element has methodes like isdisplay or or is enebled.
+ 6.HTML report and logger report is generated into the topmost folders.
+ 7.Assertertion is impleted at the methode level

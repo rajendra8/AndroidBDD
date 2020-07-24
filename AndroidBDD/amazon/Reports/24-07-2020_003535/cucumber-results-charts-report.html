@@ -1,0 +1,594 @@
+<html>
+<head><style type="text/css">h1 {background-color:#9999CC}
+h2 {background-color:#BBBBCC}
+h3 {background-color:#DDDDFF}
+th {border:1px solid black;background-color:#CCCCDD;}
+td{border:1px solid black;}
+table {border:1px solid black;border-collapse: collapse;}
+.chart {border:0px none black;border-collapse: collapse;background-color: none;}
+.passed {background-color:lightgreen;font-weight:bold;color:darkgreen}
+.skipped {background-color:silver;font-weight:bold;color:darkgray}
+.failed {background-color:tomato;font-weight:bold;color:darkred}
+.undefined {background-color:gold;font-weight:bold;color:goldenrod}
+.known {background-color:goldenrod;font-weight:bold;color:darkred}
+
+div.header {
+    display: block; text-align: center;
+    position: running(header);
+}
+div.footer {
+    display: block; text-align: center;
+    position: running(footer);
+}
+div.content {page-break-after: always;}
+@page {
+	 size: A4 Landscape;
+     @top-center {
+     	content: "Charts Report";
+	    color: silver;
+	    font-size: 14px;
+     }
+     @top-right {
+     	content: date("dd MMM, yyyy hh:mm");
+	    color: silver;
+	    font-size: 8px;
+     }
+    @bottom-right {
+    	content: "Page " counter(page) " of " counter(pages) ;
+	    color: silver;
+	    font-size: 8px;
+    }
+}
+</style>
+<title>Charts Report</title>
+<meta charset="UTF-8" />
+</head>
+  <body>
+    <div class='header'></div>
+    <div class='footer'></div>
+<table>
+<tr>
+<th colspan="3">Run Results Status</th></tr>
+<tr><th>Features</th><th>Scenarios</th><th>Steps</th>
+</tr>
+<tr>
+    <td class="chart">
+<div id="feature_status" style="width: 400px; height: 300px;">
+    <div style="position: relative;">
+        <div dir="ltr"
+            style="position: relative; width: 400px; height: 300px;">
+            <div aria-label="A chart."
+                style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
+                <svg aria-label="A chart." style="overflow: hidden;" height="300"
+                    width="450">
+                    <defs id="defs"></defs>
+
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M150,122 L150,64 A90,60,0,0,1,235.59508647,105.45898034 M235.59508647,105.45898034 L150,122"></path>
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M150,122 L235.59508647,105.45898034 A90,60,0,0,1,202.90067271,172.54101966 M202.90067271,172.54101966 L150,122"></path>
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M150,122 L202.90067271,172.54101966 A90,60,0,0,1,97.09932729,172.54101966 M97.09932729,172.54101966 L150,122"></path>
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M150,122 L97.09932729,172.54101966 A90,60,0,0,1,64.40491353,105.45898034 M64.40491353,105.45898034 L150,122"></path>
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M150,122 L64.40491353,105.45898034 A90,60,0,0,1,150,64 M150,64 L150,122"></path>
+            
+            <path fill="darkred" stroke-width="1" stroke="darkred"
+				 d="M150,122 L150,64 L150,44 L150,102 L150,122 "></path>
+
+
+            
+            <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+				 d="M150,118 L150,56 L150,36 L150,98 L150,118 "></path>
+
+            
+            <path fill="darkred" stroke-width="1" stroke="darkred"
+				 d="M150,122 L150,64 L150,44 L150,102 L150,122 "></path>
+
+            
+            <path fill="darkgray" stroke-width="1" stroke="darkgray"
+				 d="M150,118 L150,56 L150,36 L150,98 L150,118 "></path>
+
+            
+            <path fill="goldenrod" stroke-width="1" stroke="goldenrod"
+				 d="M150,118 L150,56 L150,36 L150,98 L150,118 "></path>
+
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M150,102 L150,44 A90,60,0,0,1,235.59508647,85.45898034 M235.59508647,85.45898034 L150,102"></path>
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M150,102 L235.59508647,85.45898034 A90,60,0,0,1,202.90067271,152.54101966 M202.90067271,152.54101966 L150,102"></path>
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M150,102 L202.90067271,152.54101966 A90,60,0,0,1,97.09932729,152.54101966 M97.09932729,152.54101966 L150,102"></path>
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M150,102 L97.09932729,152.54101966 A90,60,0,0,1,64.40491353,85.45898034 M64.40491353,85.45898034 L150,102"></path>
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M150,102 L64.40491353,85.45898034 A90,60,0,0,1,150,44 M150,44 L150,102"></path>
+			            <text x="280"
+			            	 y="67.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">0% (0) Passed</text>
+			           <circle cx="270"
+			            cy="62.5"
+			             r="5" stroke="darkgreen" stroke-width="1" fill="green" />
+			            <text x="280"
+			            	 y="97.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">100% (1) Failed</text>
+			           <circle cx="270"
+			            cy="92.5"
+			             r="5" stroke="darkred" stroke-width="1" fill="red" />
+			            <text x="280"
+			            	 y="127.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">0% (0) Undefined</text>
+			           <circle cx="270"
+			            cy="122.5"
+			             r="5" stroke="darkgray" stroke-width="1" fill="silver" />
+			            <text x="280"
+			            	 y="157.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">0% (0) Known</text>
+			           <circle cx="270"
+			            cy="152.5"
+			             r="5" stroke="goldenrod" stroke-width="1" fill="gold" />
+                    </svg>
+            </div>
+        </div>
+    </div>
+</div>
+	</td>
+    <td class="chart">
+<div id="scenario_status" style="width: 400px; height: 300px;">
+    <div style="position: relative;">
+        <div dir="ltr"
+            style="position: relative; width: 400px; height: 300px;">
+            <div aria-label="A chart."
+                style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
+                <svg aria-label="A chart." style="overflow: hidden;" height="300"
+                    width="450">
+                    <defs id="defs"></defs>
+
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M150,122 L150,64 A90,60,0,0,1,235.59508647,105.45898034 M235.59508647,105.45898034 L150,122"></path>
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M150,122 L235.59508647,105.45898034 A90,60,0,0,1,202.90067271,172.54101966 M202.90067271,172.54101966 L150,122"></path>
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M150,122 L202.90067271,172.54101966 A90,60,0,0,1,97.09932729,172.54101966 M97.09932729,172.54101966 L150,122"></path>
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M150,122 L97.09932729,172.54101966 A90,60,0,0,1,64.40491353,105.45898034 M64.40491353,105.45898034 L150,122"></path>
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M150,122 L64.40491353,105.45898034 A90,60,0,0,1,150,64 M150,64 L150,122"></path>
+            
+            <path fill="darkred" stroke-width="1" stroke="darkred"
+				 d="M150,122 L150,64 L150,44 L150,102 L150,122 "></path>
+
+
+            
+            <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+				 d="M150,118 L150,56 L150,36 L150,98 L150,118 "></path>
+
+            
+            <path fill="darkred" stroke-width="1" stroke="darkred"
+				 d="M150,122 L150,64 L150,44 L150,102 L150,122 "></path>
+
+            
+            <path fill="darkgray" stroke-width="1" stroke="darkgray"
+				 d="M150,118 L150,56 L150,36 L150,98 L150,118 "></path>
+
+            
+            <path fill="goldenrod" stroke-width="1" stroke="goldenrod"
+				 d="M150,118 L150,56 L150,36 L150,98 L150,118 "></path>
+
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M150,102 L150,44 A90,60,0,0,1,235.59508647,85.45898034 M235.59508647,85.45898034 L150,102"></path>
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M150,102 L235.59508647,85.45898034 A90,60,0,0,1,202.90067271,152.54101966 M202.90067271,152.54101966 L150,102"></path>
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M150,102 L202.90067271,152.54101966 A90,60,0,0,1,97.09932729,152.54101966 M97.09932729,152.54101966 L150,102"></path>
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M150,102 L97.09932729,152.54101966 A90,60,0,0,1,64.40491353,85.45898034 M64.40491353,85.45898034 L150,102"></path>
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M150,102 L64.40491353,85.45898034 A90,60,0,0,1,150,44 M150,44 L150,102"></path>
+			            <text x="280"
+			            	 y="67.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">0% (0) Passed</text>
+			           <circle cx="270"
+			            cy="62.5"
+			             r="5" stroke="darkgreen" stroke-width="1" fill="green" />
+			            <text x="280"
+			            	 y="97.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">100% (1) Failed</text>
+			           <circle cx="270"
+			            cy="92.5"
+			             r="5" stroke="darkred" stroke-width="1" fill="red" />
+			            <text x="280"
+			            	 y="127.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">0% (0) Undefined</text>
+			           <circle cx="270"
+			            cy="122.5"
+			             r="5" stroke="darkgray" stroke-width="1" fill="silver" />
+			            <text x="280"
+			            	 y="157.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">0% (0) Known</text>
+			           <circle cx="270"
+			            cy="152.5"
+			             r="5" stroke="goldenrod" stroke-width="1" fill="gold" />
+                    </svg>
+            </div>
+        </div>
+    </div>
+</div>
+	</td>
+    <td class="chart">
+<div id="steps_status" style="width: 400px; height: 300px;">
+    <div style="position: relative;">
+        <div dir="ltr"
+            style="position: relative; width: 400px; height: 300px;">
+            <div aria-label="A chart."
+                style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
+                <svg aria-label="A chart." style="overflow: hidden;" height="300"
+                    width="450">
+                    <defs id="defs"></defs>
+
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M150.92944634,118.22908795 L151.85889269,56.4581759 A90,60,0,0,1,169.15029725,57.57596833 M169.15029725,57.57596833 L150.92944634,118.22908795"></path>
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M150.92944634,118.22908795 L169.15029725,57.57596833 A90,60,0,0,1,185.79742844,60.88769696 M185.79742844,60.88769696 L150.92944634,118.22908795"></path>
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M150.92944634,118.22908795 L185.79742844,60.88769696 A90,60,0,0,1,201.18001835,66.26996762 M201.18001835,66.26996762 L150.92944634,118.22908795"></path>
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M150.92944634,118.22908795 L201.18001835,66.26996762 A90,60,0,0,1,214.72491556,73.52223825 M214.72491556,73.52223825 L150.92944634,118.22908795"></path>
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M150.92944634,118.22908795 L214.72491556,73.52223825 A90,60,0,0,1,225.92744062,82.37429109 M225.92744062,82.37429109 L150.92944634,118.22908795"></path>
+
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M151.87003249,119.29079023 L227.8086129,84.49769565 A90,60,0,0,1,232.39718791,89.42257566 M232.39718791,89.42257566 L151.87003249,119.29079023"></path>
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M151.87003249,119.29079023 L232.39718791,89.42257566 A90,60,0,0,1,236.25136255,94.61970544 M236.25136255,94.61970544 L151.87003249,119.29079023"></path>
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M151.87003249,119.29079023 L236.25136255,94.61970544 A90,60,0,0,1,239.33515144,100.04056079 M239.33515144,100.04056079 L151.87003249,119.29079023"></path>
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M151.87003249,119.29079023 L239.33515144,100.04056079 A90,60,0,0,1,241.61976207,105.63452865 M241.61976207,105.63452865 L151.87003249,119.29079023"></path>
+                        
+                <path fill="darkred" stroke-width="1" stroke="darkred"
+					d="M151.87003249,119.29079023 L241.61976207,105.63452865 A90,60,0,0,1,243.08386364,111.34937964 M243.08386364,111.34937964 L151.87003249,119.29079023"></path>
+
+                        
+                <path fill="darkgray" stroke-width="1" stroke="darkgray"
+					d="M148.67375468,121.4970215 L236.69130804,115.76184218 A90,60,0,0,1,207.02854861,167.90468788 M207.02854861,167.90468788 L148.67375468,121.4970215"></path>
+                        
+                <path fill="darkgray" stroke-width="1" stroke="darkgray"
+					d="M148.67375468,121.4970215 L207.02854861,167.90468788 A90,60,0,0,1,125.80909958,181.25055204 M125.80909958,181.25055204 L148.67375468,121.4970215"></path>
+                        
+                <path fill="darkgray" stroke-width="1" stroke="darkgray"
+					d="M148.67375468,121.4970215 L125.80909958,181.25055204 A90,60,0,0,1,63.19604753,144.27033622 M63.19604753,144.27033622 L148.67375468,121.4970215"></path>
+                        
+                <path fill="darkgray" stroke-width="1" stroke="darkgray"
+					d="M148.67375468,121.4970215 L63.19604753,144.27033622 A90,60,0,0,1,73.27896144,88.91015819 M73.27896144,88.91015819 L148.67375468,121.4970215"></path>
+                        
+                <path fill="darkgray" stroke-width="1" stroke="darkgray"
+					d="M148.67375468,121.4970215 L73.27896144,88.91015819 A90,60,0,0,1,147.34750937,62.99404299 M147.34750937,62.99404299 L148.67375468,121.4970215"></path>
+            
+            <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+				 d="M150.92944634,118.22908795 L151.85889269,56.4581759 L151.85889269,36.4581759 L150.92944634,98.22908795 L150.92944634,118.22908795 "></path>
+            
+            <path fill="darkred" stroke-width="1" stroke="darkred"
+				 d="M151.87003249,119.29079023 L227.8086129,84.49769565 L227.8086129,64.49769565 L151.87003249,99.29079023 L151.87003249,119.29079023 "></path>
+            
+            <path fill="darkgray" stroke-width="1" stroke="darkgray"
+				 d="M148.67375468,121.4970215 L236.69130804,115.76184218 L236.69130804,95.76184218 L148.67375468,101.4970215 L148.67375468,121.4970215 "></path>
+
+
+            
+            <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+				 d="M150.92944634,118.22908795 L225.92744062,82.37429109 L225.92744062,62.37429109 L150.92944634,98.22908795 L150.92944634,118.22908795 "></path>
+
+            
+            <path fill="darkred" stroke-width="1" stroke="darkred"
+				 d="M151.87003249,119.29079023 L243.08386364,111.34937964 L243.08386364,91.34937964 L151.87003249,99.29079023 L151.87003249,119.29079023 "></path>
+
+            
+            <path fill="darkgray" stroke-width="1" stroke="darkgray"
+				 d="M148.67375468,121.4970215 L147.34750937,62.99404299 L147.34750937,42.99404299 L148.67375468,101.4970215 L148.67375468,121.4970215 "></path>
+
+            
+            <path fill="goldenrod" stroke-width="1" stroke="goldenrod"
+				 d="M150,118 L150,56 L150,36 L150,98 L150,118 "></path>
+
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M150.92944634,98.22908795 L151.85889269,36.4581759 A90,60,0,0,1,169.15029725,37.57596833 M169.15029725,37.57596833 L150.92944634,98.22908795"></path>
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M150.92944634,98.22908795 L169.15029725,37.57596833 A90,60,0,0,1,185.79742844,40.88769696 M185.79742844,40.88769696 L150.92944634,98.22908795"></path>
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M150.92944634,98.22908795 L185.79742844,40.88769696 A90,60,0,0,1,201.18001835,46.26996762 M201.18001835,46.26996762 L150.92944634,98.22908795"></path>
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M150.92944634,98.22908795 L201.18001835,46.26996762 A90,60,0,0,1,214.72491556,53.52223825 M214.72491556,53.52223825 L150.92944634,98.22908795"></path>
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M150.92944634,98.22908795 L214.72491556,53.52223825 A90,60,0,0,1,225.92744062,62.37429109 M225.92744062,62.37429109 L150.92944634,98.22908795"></path>
+
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M151.87003249,99.29079023 L227.8086129,64.49769565 A90,60,0,0,1,232.39718791,69.42257566 M232.39718791,69.42257566 L151.87003249,99.29079023"></path>
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M151.87003249,99.29079023 L232.39718791,69.42257566 A90,60,0,0,1,236.25136255,74.61970544 M236.25136255,74.61970544 L151.87003249,99.29079023"></path>
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M151.87003249,99.29079023 L236.25136255,74.61970544 A90,60,0,0,1,239.33515144,80.04056079 M239.33515144,80.04056079 L151.87003249,99.29079023"></path>
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M151.87003249,99.29079023 L239.33515144,80.04056079 A90,60,0,0,1,241.61976207,85.63452865 M241.61976207,85.63452865 L151.87003249,99.29079023"></path>
+                        
+                <path fill="red" stroke-width="1" stroke="red"
+					d="M151.87003249,99.29079023 L241.61976207,85.63452865 A90,60,0,0,1,243.08386364,91.34937964 M243.08386364,91.34937964 L151.87003249,99.29079023"></path>
+
+                        
+                <path fill="silver" stroke-width="1" stroke="silver"
+					d="M148.67375468,101.4970215 L236.69130804,95.76184218 A90,60,0,0,1,207.02854861,147.90468788 M207.02854861,147.90468788 L148.67375468,101.4970215"></path>
+                        
+                <path fill="silver" stroke-width="1" stroke="silver"
+					d="M148.67375468,101.4970215 L207.02854861,147.90468788 A90,60,0,0,1,125.80909958,161.25055204 M125.80909958,161.25055204 L148.67375468,101.4970215"></path>
+                        
+                <path fill="silver" stroke-width="1" stroke="silver"
+					d="M148.67375468,101.4970215 L125.80909958,161.25055204 A90,60,0,0,1,63.19604753,124.27033622 M63.19604753,124.27033622 L148.67375468,101.4970215"></path>
+                        
+                <path fill="silver" stroke-width="1" stroke="silver"
+					d="M148.67375468,101.4970215 L63.19604753,124.27033622 A90,60,0,0,1,73.27896144,68.91015819 M73.27896144,68.91015819 L148.67375468,101.4970215"></path>
+                        
+                <path fill="silver" stroke-width="1" stroke="silver"
+					d="M148.67375468,101.4970215 L73.27896144,68.91015819 A90,60,0,0,1,147.34750937,42.99404299 M147.34750937,42.99404299 L148.67375468,101.4970215"></path>
+			            <text x="280"
+			            	 y="67.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">15% (2) Passed</text>
+			           <circle cx="270"
+			            cy="62.5"
+			             r="5" stroke="darkgreen" stroke-width="1" fill="green" />
+			            <text x="280"
+			            	 y="97.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">8% (1) Failed</text>
+			           <circle cx="270"
+			            cy="92.5"
+			             r="5" stroke="darkred" stroke-width="1" fill="red" />
+			            <text x="280"
+			            	 y="127.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">77% (10) Undefined</text>
+			           <circle cx="270"
+			            cy="122.5"
+			             r="5" stroke="darkgray" stroke-width="1" fill="silver" />
+			            <text x="280"
+			            	 y="157.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">0% (0) Known</text>
+			           <circle cx="270"
+			            cy="152.5"
+			             r="5" stroke="goldenrod" stroke-width="1" fill="gold" />
+                    </svg>
+            </div>
+        </div>
+    </div>
+</div>
+	</td>
+</tr>
+<tr>
+	<td colspan="3"></td>
+</tr>
+<tr>
+	<th colspan="3">Coverage Status</th>
+</tr>
+<tr><th>Features</th><th>Scenarios</th><th>Steps</th></tr>
+<tr>
+    <td class="chart">
+<div id="feature_coverage" style="width: 400px; height: 300px;">
+    <div style="position: relative;">
+        <div dir="ltr"
+            style="position: relative; width: 400px; height: 300px;">
+            <div aria-label="A chart."
+                style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
+                <svg aria-label="A chart." style="overflow: hidden;" height="300"
+                    width="450">
+                    <defs id="defs"></defs>
+			            <text x="280"
+			            	 y="67.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">N/A% (0) Covered</text>
+			           <circle cx="270"
+			            cy="62.5"
+			             r="5" stroke="darkgreen" stroke-width="1" fill="green" />
+			            <text x="280"
+			            	 y="97.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">N/A% (0) Not Covered</text>
+			           <circle cx="270"
+			            cy="92.5"
+			             r="5" stroke="GoldenRod" stroke-width="1" fill="gold" />
+                    </svg>
+            </div>
+        </div>
+    </div>
+</div>
+	</td>
+    <td class="chart">
+<div id="scenario_coverage" style="width: 400px; height: 300px;">
+    <div style="position: relative;">
+        <div dir="ltr"
+            style="position: relative; width: 400px; height: 300px;">
+            <div aria-label="A chart."
+                style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
+                <svg aria-label="A chart." style="overflow: hidden;" height="300"
+                    width="450">
+                    <defs id="defs"></defs>
+			            <text x="280"
+			            	 y="67.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">N/A% (0) Covered</text>
+			           <circle cx="270"
+			            cy="62.5"
+			             r="5" stroke="darkgreen" stroke-width="1" fill="green" />
+			            <text x="280"
+			            	 y="97.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">N/A% (0) Not Covered</text>
+			           <circle cx="270"
+			            cy="92.5"
+			             r="5" stroke="GoldenRod" stroke-width="1" fill="gold" />
+                    </svg>
+            </div>
+        </div>
+    </div>
+</div>
+	</td>
+    <td class="chart">
+<div id="steps_coverage" style="width: 400px; height: 300px;">
+    <div style="position: relative;">
+        <div dir="ltr"
+            style="position: relative; width: 400px; height: 300px;">
+            <div aria-label="A chart."
+                style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%;">
+                <svg aria-label="A chart." style="overflow: hidden;" height="300"
+                    width="450">
+                    <defs id="defs"></defs>
+
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M151,118.26794919 L152,56.53589838 A90,60,0,0,1,170.71205217,57.84704234 M170.71205217,57.84704234 L151,118.26794919"></path>
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M151,118.26794919 L170.71205217,57.84704234 A90,60,0,0,1,188.60629788,61.72317093 M188.60629788,61.72317093 L151,118.26794919"></path>
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M151,118.26794919 L188.60629788,61.72317093 A90,60,0,0,1,204.90067271,67.99487872 M204.90067271,67.99487872 L151,118.26794919"></path>
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M151,118.26794919 L204.90067271,67.99487872 A90,60,0,0,1,218.88303429,76.388062 M218.88303429,76.388062 L151,118.26794919"></path>
+                        
+                <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+					d="M151,118.26794919 L218.88303429,76.388062 A90,60,0,0,1,229.94228634,86.53589838 M229.94228634,86.53589838 L151,118.26794919"></path>
+
+                        
+                <path fill="GoldenRod" stroke-width="1" stroke="GoldenRod"
+					d="M149,121.73205081 L225.94228634,93.46410162 A90,60,0,0,1,225.94228634,153.46410162 M225.94228634,153.46410162 L149,121.73205081"></path>
+                        
+                <path fill="GoldenRod" stroke-width="1" stroke="GoldenRod"
+					d="M149,121.73205081 L225.94228634,153.46410162 A90,60,0,0,1,148,183.46410162 M148,183.46410162 L149,121.73205081"></path>
+                        
+                <path fill="GoldenRod" stroke-width="1" stroke="GoldenRod"
+					d="M149,121.73205081 L148,183.46410162 A90,60,0,0,1,70.05771366,153.46410162 M70.05771366,153.46410162 L149,121.73205081"></path>
+                        
+                <path fill="GoldenRod" stroke-width="1" stroke="GoldenRod"
+					d="M149,121.73205081 L70.05771366,153.46410162 A90,60,0,0,1,70.05771366,93.46410162 M70.05771366,93.46410162 L149,121.73205081"></path>
+                        
+                <path fill="GoldenRod" stroke-width="1" stroke="GoldenRod"
+					d="M149,121.73205081 L70.05771366,93.46410162 A90,60,0,0,1,148,63.46410162 M148,63.46410162 L149,121.73205081"></path>
+            
+            <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+				 d="M151,118.26794919 L152,56.53589838 L152,36.53589838 L151,98.26794919 L151,118.26794919 "></path>
+            
+            <path fill="GoldenRod" stroke-width="1" stroke="GoldenRod"
+				 d="M149,121.73205081 L225.94228634,93.46410162 L225.94228634,73.46410162 L149,101.73205081 L149,121.73205081 "></path>
+
+
+            
+            <path fill="darkgreen" stroke-width="1" stroke="darkgreen"
+				 d="M151,118.26794919 L229.94228634,86.53589838 L229.94228634,66.53589838 L151,98.26794919 L151,118.26794919 "></path>
+
+            
+            <path fill="GoldenRod" stroke-width="1" stroke="GoldenRod"
+				 d="M149,121.73205081 L148,63.46410162 L148,43.46410162 L149,101.73205081 L149,121.73205081 "></path>
+
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M151,98.26794919 L152,36.53589838 A90,60,0,0,1,170.71205217,37.84704234 M170.71205217,37.84704234 L151,98.26794919"></path>
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M151,98.26794919 L170.71205217,37.84704234 A90,60,0,0,1,188.60629788,41.72317093 M188.60629788,41.72317093 L151,98.26794919"></path>
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M151,98.26794919 L188.60629788,41.72317093 A90,60,0,0,1,204.90067271,47.99487872 M204.90067271,47.99487872 L151,98.26794919"></path>
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M151,98.26794919 L204.90067271,47.99487872 A90,60,0,0,1,218.88303429,56.388062 M218.88303429,56.388062 L151,98.26794919"></path>
+                        
+                <path fill="green" stroke-width="1" stroke="green"
+					d="M151,98.26794919 L218.88303429,56.388062 A90,60,0,0,1,229.94228634,66.53589838 M229.94228634,66.53589838 L151,98.26794919"></path>
+
+                        
+                <path fill="gold" stroke-width="1" stroke="gold"
+					d="M149,101.73205081 L225.94228634,73.46410162 A90,60,0,0,1,225.94228634,133.46410162 M225.94228634,133.46410162 L149,101.73205081"></path>
+                        
+                <path fill="gold" stroke-width="1" stroke="gold"
+					d="M149,101.73205081 L225.94228634,133.46410162 A90,60,0,0,1,148,163.46410162 M148,163.46410162 L149,101.73205081"></path>
+                        
+                <path fill="gold" stroke-width="1" stroke="gold"
+					d="M149,101.73205081 L148,163.46410162 A90,60,0,0,1,70.05771366,133.46410162 M70.05771366,133.46410162 L149,101.73205081"></path>
+                        
+                <path fill="gold" stroke-width="1" stroke="gold"
+					d="M149,101.73205081 L70.05771366,133.46410162 A90,60,0,0,1,70.05771366,73.46410162 M70.05771366,73.46410162 L149,101.73205081"></path>
+                        
+                <path fill="gold" stroke-width="1" stroke="gold"
+					d="M149,101.73205081 L70.05771366,73.46410162 A90,60,0,0,1,148,43.46410162 M148,43.46410162 L149,101.73205081"></path>
+			            <text x="280"
+			            	 y="67.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">17% (2) Covered</text>
+			           <circle cx="270"
+			            cy="62.5"
+			             r="5" stroke="darkgreen" stroke-width="1" fill="green" />
+			            <text x="280"
+			            	 y="97.5"
+			            	 font-weight = "bold"
+			            	 font-size = "14">83% (10) Not Covered</text>
+			           <circle cx="270"
+			            cy="92.5"
+			             r="5" stroke="GoldenRod" stroke-width="1" fill="gold" />
+                    </svg>
+            </div>
+        </div>
+    </div>
+</div>
+	</td>
+</tr>
+</table>		
+	</body>
+</html>
